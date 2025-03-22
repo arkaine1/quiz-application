@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Quiz App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="quiz-container bg-white p-4 rounded shadow-lg w-100">
+            <h1 class="text-center mb-4">Dynamic Quiz Application</h1>
+            <div id="quiz">
+                <div id="question-container">
+                    <p id="question" class="fs-5 mb-4">Question text here</p>
+                    <ul id="options" class="list-unstyled"></ul>
+                </div>
+                <div id="feedback" class="my-3 fw-bold fs-5"></div>
+                <div id="controls" class="text-center">
+                    <button id="next-btn" class="btn btn-primary">Next</button>
+                </div>
+                <div id="progress" class="mt-4">
+                    <span id="progress-text" class="d-block mb-2"></span>
+                    <div class="progress">
+                        <divdiv id="progress-fill" class="progress-bar" role="progressbar" title="Quiz Progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="result-container" class="text-center hide">
+                <h2 class="mb-3">Quiz Complete!</h2>
+                <p id="result-text" class="fs-5 mb-4"></p>
+                <button id="restart-btn" class="btn btn-success">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.1/dist/sweetalert2.all.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
